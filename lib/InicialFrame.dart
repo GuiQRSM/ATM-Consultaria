@@ -10,6 +10,22 @@ class InicialFrame extends StatefulWidget {
 var mainColor = Color.fromRGBO(43, 120, 62, 1);
 var supportingColor = Color.fromRGBO(122, 220, 145, 1);
 
+void _gestureEmpresa (){
+  print("Image empresa on.");
+}
+
+void _gestureServico (){
+  print("Image serviço on.");
+}
+
+void _gestureContato (){
+  print("Image contato on.");
+}
+
+void _gestureCliente (){
+  print("Image cliente on.");
+}
+
 class _InicialFrameState extends State<InicialFrame> {
   @override
   Widget build(BuildContext context) {
@@ -38,8 +54,14 @@ class _InicialFrameState extends State<InicialFrame> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                  Image.asset("imgs/menu_empresa.png",),
-                  Image.asset("imgs/menu_servico.png")
+                  GestureDetector(
+                    onTap: _gestureEmpresa,
+                    child: Image.asset("imgs/menu_empresa.png",),
+                  ),
+                  GestureDetector(
+                    onTap: _gestureServico,
+                    child: Image.asset("imgs/menu_servico.png"),
+                  ),
                 ],
               ),
               Padding(
@@ -48,8 +70,14 @@ class _InicialFrameState extends State<InicialFrame> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                  Image.asset("imgs/menu_cliente.png"),
-                  Image.asset("imgs/menu_contato.png")
+                  GestureDetector(
+                    onTap: _gestureCliente,
+                    child: Image.asset("imgs/menu_cliente.png"),
+                  ),
+                  GestureDetector(
+                    onTap: _gestureContato,
+                    child: Image.asset("imgs/menu_contato.png"),
+                  )
                 ],
               ),
             ],
