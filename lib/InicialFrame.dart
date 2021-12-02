@@ -14,6 +14,7 @@ class _InicialFrameState extends State<InicialFrame> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text("ATM Consultoria",
         style: TextStyle(
