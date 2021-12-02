@@ -24,10 +24,16 @@ class _InicialFrameState extends State<InicialFrame> {
       body: Container(
         width: double.infinity,
         child: SingleChildScrollView(
-          padding: EdgeInsets.all(40),
+          padding: EdgeInsets.all(32),
           child: Column(
             children: <Widget>[
-
+              Padding(
+                  padding: EdgeInsets.only(top:32, bottom: 5),
+                child: Image.asset(
+                    "imgs/logo.png",
+                  height: 130,
+                ),
+              ),
             ],
           ),
         ),
