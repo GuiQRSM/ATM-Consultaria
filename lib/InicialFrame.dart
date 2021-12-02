@@ -28,11 +28,18 @@ class _InicialFrameState extends State<InicialFrame> {
           child: Column(
             children: <Widget>[
               Padding(
-                  padding: EdgeInsets.only(top:32, bottom: 5),
+                  padding: EdgeInsets.only(top:32, bottom: 15),
                 child: Image.asset(
                     "imgs/logo.png",
-                  height: 130,
+                  height: 110,
                 ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Image.asset("imgs/menu_empresa.png",),
+                  Image.asset("imgs/menu_servico.png")
+                ],
               ),
             ],
           ),
