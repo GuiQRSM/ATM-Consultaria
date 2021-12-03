@@ -10,23 +10,24 @@ class InicialFrame extends StatefulWidget {
 var mainColor = Color.fromRGBO(43, 120, 62, 1);
 var supportingColor = Color.fromRGBO(122, 220, 145, 1);
 
-void _gestureEmpresa (){
-  print("Image empresa on.");
-}
-
-void _gestureServico (){
-  print("Image serviço on.");
-}
-
-void _gestureContato (){
-  print("Image contato on.");
-}
-
-void _gestureCliente (){
-  print("Image cliente on.");
-}
-
 class _InicialFrameState extends State<InicialFrame> {
+
+  void _gestureEmpresa (){
+    print("Image empresa on.");
+  }
+
+  void _gestureServico (){
+    print("Image serviço on.");
+  }
+
+  void _gestureContato (){
+    print("Image contato on.");
+  }
+
+  void _gestureCliente (){
+    print("Image cliente on.");
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
