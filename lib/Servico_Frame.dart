@@ -14,6 +14,7 @@ class _ServicoFrameState extends State<ServicoFrame> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text("Serviços",
           style: TextStyle(
@@ -25,13 +26,15 @@ class _ServicoFrameState extends State<ServicoFrame> {
         child: SingleChildScrollView(
           padding: EdgeInsets.all(18),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
              Padding(
                padding: EdgeInsets.only(top: 10),
                child: Row(
                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                  children: <Widget>[
-                   Image.asset("imgs/detalhe_servico.png"),
+                   Image.asset("imgs/detalhe_servico.png",
+                   height: 80,),
                    Text(
                        "Nossos Serviços",
                    style: TextStyle(
@@ -42,6 +45,31 @@ class _ServicoFrameState extends State<ServicoFrame> {
                  ],
                ),
              ),
+              Padding(
+                padding: EdgeInsets.only(top: 14, bottom: 10),
+                child: Text("Consultoria",
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.w600,
+                    color: mainColor,
+                  ),),
+              ),
+              Text("Cálculo de Preços",
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.w600,
+                color: mainColor,
+              ),),
+              Padding(
+                  padding: EdgeInsets.only(top: 5, bottom: 5),
+              ),
+              Text("Acompanhamento de projetos",
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600,
+                  color: mainColor,
+                ),)
             ],
           ),
         ),
