@@ -21,6 +21,31 @@ class _ServicoFrameState extends State<ServicoFrame> {
           ),),
         backgroundColor: mainColor,
       ),
+      body: Container(
+        child: SingleChildScrollView(
+          padding: EdgeInsets.all(18),
+          child: Column(
+            children: <Widget>[
+             Padding(
+               padding: EdgeInsets.only(top: 10),
+               child: Row(
+                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                 children: <Widget>[
+                   Image.asset("imgs/detalhe_servico.png"),
+                   Text(
+                       "Nossos Serviços",
+                   style: TextStyle(
+                     fontSize: 22,
+                     fontWeight: FontWeight.w600,
+                     color: mainColor,
+                   ),),
+                 ],
+               ),
+             ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
