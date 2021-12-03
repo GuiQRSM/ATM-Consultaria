@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ClienteFrame extends StatefulWidget {
@@ -20,6 +21,54 @@ class _ClienteFrameState extends State<ClienteFrame> {
         color: supportingColor,
       ),),
         backgroundColor: mainColor,
+      ),
+      body: Container(
+        child: SingleChildScrollView(
+          padding: EdgeInsets.all(18),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Padding(
+                  padding: EdgeInsets.only(top: 10),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    Image.asset("imgs/detalhe_cliente.png",
+                    height: 100,),
+                    Text("Clientes",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.w600,
+                      color: mainColor,
+                    ),)
+                  ],
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 14, bottom: 4),
+                child: Image.asset("imgs/cliente1.png",),
+              ),
+              Text("Empresa de Software",
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w600,
+                  color: mainColor,
+                ),),
+              Padding(
+                padding: EdgeInsets.only(top: 14, bottom: 4),
+                child: Image.asset("imgs/cliente2.png",),
+              ),
+              Text("Empresa de Auditoria",
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w600,
+                  color: mainColor,
+                ),),
+            ],
+          ),
+        ),
       ),
     );
   }

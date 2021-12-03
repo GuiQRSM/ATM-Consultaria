@@ -34,7 +34,7 @@ class _ServicoFrameState extends State<ServicoFrame> {
                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                  children: <Widget>[
                    Image.asset("imgs/detalhe_servico.png",
-                   height: 80,),
+                   height: 70,),
                    Text(
                        "Nossos Serviços",
                    style: TextStyle(
