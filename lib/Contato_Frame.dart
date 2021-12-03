@@ -21,6 +21,58 @@ class _ContatoFrameState extends State<ContatoFrame> {
           ),),
         backgroundColor: mainColor,
       ),
+      body: Container(
+        child: SingleChildScrollView(
+          padding: EdgeInsets.all(18),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Padding(
+                padding: EdgeInsets.only(top: 10),
+                child: Row(
+                  children: <Widget>[
+                    Image.asset("imgs/detalhe_contato.png",
+                      height: 80,),
+                    Padding(padding: EdgeInsets.only(left: 18, right: 18)),
+                    Text(
+                      "Contato",
+                      style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.w600,
+                        color: mainColor,
+                      ),),
+                  ],
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 14, bottom: 10),
+                child: Text("E-mail: consultoria@atm.com",
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w600,
+                    color: mainColor,
+                  ),),
+              ),
+              Text("Telefone: (11)3333-2222",
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600,
+                  color: mainColor,
+                ),),
+              Padding(
+                padding: EdgeInsets.only(top: 5, bottom: 5),
+              ),
+              Text("Celular: (11)9999-8888",
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600,
+                  color: mainColor,
+                ),)
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
