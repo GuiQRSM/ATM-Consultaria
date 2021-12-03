@@ -43,7 +43,7 @@ class _InicialFrameState extends State<InicialFrame> {
     Navigator.push(
         context,
         MaterialPageRoute(
-            builder: (context) => ContatoFrame();
+            builder: (context) => ContatoFrame(),
         ),
     );
 
