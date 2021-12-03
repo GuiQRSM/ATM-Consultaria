@@ -31,10 +31,10 @@ class _ClienteFrameState extends State<ClienteFrame> {
               Padding(
                   padding: EdgeInsets.only(top: 10),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     Image.asset("imgs/detalhe_cliente.png",
                     height: 100,),
+                    Padding(padding: EdgeInsets.only(left: 22)),
                     Text("Clientes",
                     style: TextStyle(
                       fontSize: 22,
