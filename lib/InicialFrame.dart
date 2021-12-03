@@ -1,3 +1,7 @@
+import 'package:atm_consultoria/Cliente_Frame.dart';
+import 'package:atm_consultoria/Contato_Frame.dart';
+import 'package:atm_consultoria/Empresa_Frame.dart';
+import 'package:atm_consultoria/Servico_Frame.dart';
 import 'package:flutter/material.dart';
 
 class InicialFrame extends StatefulWidget {
@@ -13,19 +17,47 @@ var supportingColor = Color.fromRGBO(122, 220, 145, 1);
 class _InicialFrameState extends State<InicialFrame> {
 
   void _gestureEmpresa (){
-    print("Image empresa on.");
+
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) => EmpresaFrame(),
+        ),
+    );
+
   }
 
   void _gestureServico (){
-    print("Image serviço on.");
+
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) => ServicoFrame(),
+        ),
+    );
+
   }
 
   void _gestureContato (){
-    print("Image contato on.");
+
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) => ContatoFrame();
+        ),
+    );
+
   }
 
   void _gestureCliente (){
-    print("Image cliente on.");
+
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) => ClienteFrame(),
+        ),
+    );
+
   }
 
   @override
