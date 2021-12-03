@@ -15,7 +15,7 @@ class _EmpresaFrameState extends State<EmpresaFrame> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("ATM Consultoria",
+        title: Text("Empresa",
           style: TextStyle(
             color: supportingColor,
           ),),
